@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+button, input{
+	border:none;
+}
+h1, h2, h3, h4, h5, h6, p, button, input{
+	font-family:Roboto, Arial, Helvetica, sans-serif;
+}
+
+/*header*/
+.header__container{
+	width:100%;
+	max-width:1220px;
+	margin:0 auto;
+	padding:44px 10px;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.header__logo{
+	display:block;
+	width:101px;
+	margin:0 10px 0 0;
+}
+.header__input{
+	width:60%;
+	max-width:690px;
+	border:2px solid #ccc;
+	border-radius:3px;
+	padding:11px 32px;
+	background-image:url('../images/bg-02.png');
+	background-position:left 10px center;
+	background-repeat:no-repeat;
+	color:#969696;
+	overflow:hidden;
+}
+.header__buttons{
+	display:flex;
+}
+.button{
+	display:flex;
+	align-items:center;
+	padding:10px 16px;
+	margin-left:9px;
+	border-radius:3px;
+	transition:all 0.2s ease-in;
+}
+.button:hover{
+	cursor:pointer;
+}
+.enter{
+	background-color:#1890ff;
+	border:2px solid #1890ff;
+	color:#fffffe;
+}
+.enter:hover{
+	background-color:#0376df;
+	border:2px solid #0376df;
+}
+.bag{
+	color:#595959;
+	border:2px solid #ccc;
+}
+.bag:hover{
+	background-color:#ddd;
+}
+.button img{
+	display:block;
+	padding:0 2px 0 0;
+}
+
+
+
+
+
+@media screen and (max-width:720px) {
+	.header__container{
+		width:98%;
+		flex-wrap:wrap;
+	}
+	.header__input{
+		order:2;
+		width:100%;
+		margin:10px 0 0;
+	}
+}
+@media screen and (max-width:375px) {
+	.header__logo{
+		margin:0 5px 0 0;
+	}
+	.button{
+		padding-left:15px;
+		padding-right:15px;
+		margin-left:5px;
+	}
+	.button img{
+		display:none;
+	}
+}
