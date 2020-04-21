@@ -8,7 +8,7 @@
 button, input{
 	border:none;
 }
-h1, h2, h3, h4, h5, h6, p, button, input{
+h1, h2, h3, h4, h5, h6, p, a, button, input{
 	font-family:Roboto, Arial, Helvetica, sans-serif;
 }
 body{
@@ -88,6 +88,7 @@ body{
 
 /*main*/
 .main{
+	
 	background:linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #f5f5f5 100%);
 }
 section{
@@ -151,6 +152,7 @@ section{
 	justify-content:space-between;
 	align-items:center;
 	flex-wrap:wrap;
+	padding:0 0 90px;
 }
 .card{
 	flex-basis:32%;
@@ -203,8 +205,59 @@ section{
 	display:inline-block;
 	vertical-align:middle;
 }
-
-
+/*footer*/
+.footer{
+	padding:60px 10px;
+}
+.footer__content{
+	display:flex;
+	align-items:center;
+}
+.footer__logo{
+	display:block;
+}
+.footer__menu{
+	margin-left:35px;
+	margin-right:20px;
+}
+.footer__list{
+	list-style:none;
+	display:flex;
+	flex-wrap:wrap;
+}
+.footer__item{
+	margin-right:15px;
+}
+.footer__item:last-child{
+	margin-right:0;
+}
+.footer__link{
+	text-decoration:none;
+	font-size:18px;
+	line-height:24px;
+	color:#595959;
+}
+.footer__link:hover{
+	text-decoration:underline;
+}
+.footer__social{
+	margin-left:auto;
+	display:flex;
+	align-items:center;
+}
+.footer__icon{
+	display:block;
+}
+.footer__social a{
+	margin-right:21px;
+	transition:all 0.2s ease-in;
+}
+.footer__social a:last-child{
+	margin-right:0;
+}
+.footer__social a:hover{
+	opacity:0.8;
+}
 
 
 @media screen and (max-width:1023px) {
@@ -233,6 +286,13 @@ section{
 	.card__price{
 		margin-right:8px;
 	}
+	/*footer*/
+	.footer__menu{
+		margin-left:20px;
+	}
+	.footer__social a{
+		margin-right:15px;
+	}
 }
 @media screen and (max-width:768px) {
 	.intro .container{
@@ -250,11 +310,18 @@ section{
 		font-size:16px;
 	}
 	/*cards*/
+	.cards__content{
+		padding-bottom:40px;
+	}
 	.card{
 		flex-basis:48%;
 	}
 	.card__title{
 		font-size:18px;
+	}
+	/*footer*/
+	.footer{
+		padding:40px 0;
 	}
 }
 @media screen and (max-width:720px) {
@@ -331,6 +398,19 @@ section{
 		flex-basis:100%;
 		margin:0 0 5px;
 	}
+	/*footer*/
+	.footer__content{
+		display:block;
+	}
+	.footer__menu{
+		margin:20px 0;
+	}
+	.footer__link{
+		font-size:16px;
+	}
+	.footer__item{
+		margin-right:10px;
+	}
 }
 @media screen and (max-width:375px) {
 	.header__logo{
@@ -359,5 +439,9 @@ section{
 	/*cards*/
 	.card{
 		flex-basis:100%;
+	}
+	/*footer*/
+	.footer__social{
+		justify-content:center;
 	}
 }
