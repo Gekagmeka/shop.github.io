@@ -8,7 +8,7 @@
 button, input{
 	border:none;
 }
-h1, h2, h3, h4, h5, h6, p, a, button, input{
+h1, h2, h3, h4, h5, h6, p, a, button, input, div{
 	font-family:Roboto, Arial, Helvetica, sans-serif;
 }
 body{
@@ -127,7 +127,6 @@ section{
 }
 .restaurants__heading{
 	display:flex;
-	justify-content:space-between;
 	align-items:center;
 }
 .restaurants__title{
@@ -135,6 +134,7 @@ section{
 }
 .restaurants__search{
 	width:306px;
+	margin-left:auto;
 	font-size:16px;
 	line-height:24px;
 	border:1px solid #ccc;
@@ -189,7 +189,6 @@ section{
 	align-items:center;
 }
 .card__star{
-	font-family:Roboto, Arial, Helvetica, Sans-serif;
 	margin:0 11px 0 0;
 }
 .card__price{
@@ -258,6 +257,31 @@ section{
 .footer__social a:hover{
 	opacity:0.8;
 }
+
+/*Restaurants page*/
+.restaurants__rate{
+	display:flex;
+	align-items:center;
+	margin-top:7px;
+	margin-left:30px;
+}
+.restaurants__star{
+	margin:0 26px 0 0;
+}
+.restaurants__price{
+	margin:0 25px 0 0;
+}
+.restaurants__price p:after{
+	content:'';
+	width:5px;
+	height:5px;
+	border-radius:50%;
+	background-color:#000001;
+	margin:0 0 0 17px;
+	display:inline-block;
+	vertical-align:middle;
+}
+
 
 
 @media screen and (max-width:1023px) {
@@ -411,6 +435,20 @@ section{
 	.footer__item{
 		margin-right:10px;
 	}
+	/*restaurants page*/
+	.restaurants__rate{
+		margin-top:0;
+		margin-left:0;
+	}
+	.restaurants__star{
+		margin-right:11px;
+	}
+	.restaurants__price{
+		margin-right:11px;
+	}
+	.restaurants__price p:after{
+		margin-right:6px;
+	}
 }
 @media screen and (max-width:375px) {
 	.header__logo{
@@ -439,9 +477,5 @@ section{
 	/*cards*/
 	.card{
 		flex-basis:100%;
-	}
-	/*footer*/
-	.footer__social{
-		justify-content:center;
 	}
 }
