@@ -10,15 +10,16 @@
 	<header id="header" class="header">
 		<div class="container">
 			<div class="header__content">
-				<a href="http://link"><img class="header__logo" src="images/logo-01.png" alt="Delivery food" /></a>
+				<a href="index.html"><img class="header__logo" src="images/logo-01.png" alt="Delivery food" /></a>
 				<input class="header__input" type="text" name="address" placeholder="Адрес доставки">
 				<div class="header__buttons">
 					<button class="button enter"><img src="images/ico-01.png" alt="user" /> Войти</button>
-					<button class="button bag"><img src="images/ico-02.png" alt="bag" /> Корзина</button>
+					<button class="button bag" data-toggle="open-modal"><img src="images/ico-02.png" alt="bag" /> Корзина</button>
 				</div>
 			</div>
 		</div>
 	</header>
+	<!-- /.header -->
 	<main id="main" class="main">
 		<section class="restaurants">
 			<div class="container">
@@ -174,6 +175,7 @@
 		</section>
 		<!-- /.cards -->
 	</main>
+	<!-- /.main -->
 	<footer id="footer" class="footer">
 		<div class="container">
 			<div class="footer__content">
@@ -202,6 +204,105 @@
 			</div>
 		</div>
 	</footer>
+	<!-- /.footer -->
+	<div class="modal">
+		<div class="modal__content">
+			<div class="modal__header">
+				<h1 class="modal__title">
+					Корзина
+				</h1>
+				<button class="modal__close" data-toggle="close-modal">
+					&times;
+				</button>
+			</div>
+			<!-- /.modal__header -->
+			<div class="modal__main">
+				<div class="modal__row row">
+					<p class="row__text">
+						Ролл угорь стандарт
+					</p>
+					<strong class="row__price">
+						250 &#8381;
+					</strong>
+					<div class="row__order">
+						<button class="row__counter">-</button>
+						<span class="row__value">1</span>
+						<button class="row__counter">+</button>
+					</div>
+				</div>
+				<!-- /.modal__row -->
+				<div class="modal__row row">
+					<p class="row__text">
+						Ролл угорь плюс
+					</p>
+					<strong class="row__price">
+						250 &#8381;
+					</strong>
+					<div class="row__order">
+						<button class="row__counter">-</button>
+						<span class="row__value">1</span>
+						<button class="row__counter">+</button>
+					</div>
+				</div>
+				<!-- /.modal__row -->
+				<div class="modal__row row">
+					<p class="row__text">
+						Ролл с креветкой стандарт
+					</p>
+					<strong class="row__price">
+						250 &#8381;
+					</strong>
+					<div class="row__order">
+						<button class="row__counter">-</button>
+						<span class="row__value">1</span>
+						<button class="row__counter">+</button>
+					</div>
+				</div>
+				<!-- /.modal__row -->
+				<div class="modal__row row">
+					<p class="row__text">
+						Ролл с креветкой плюс
+					</p>
+					<strong class="row__price">
+						250 &#8381;
+					</strong>
+					<div class="row__order">
+						<button class="row__counter">-</button>
+						<span class="row__value">1</span>
+						<button class="row__counter">+</button>
+					</div>
+				</div>
+				<!-- /.modal__row -->
+				<div class="modal__row row">
+					<p class="row__text">
+						Ролл угорь стандарт
+					</p>
+					<strong class="row__price">
+						250 &#8381;
+					</strong>
+					<div class="row__order">
+						<button class="row__counter">-</button>
+						<span class="row__value">1</span>
+						<button class="row__counter">+</button>
+					</div>
+				</div>
+				<!-- /.modal__row -->
+			</div>
+			<!-- /.modal__main -->
+			<div class="modal__footer">
+				<div class="modal__price">
+					1250 &#8381;
+				</div>
+				<div class="modal__button">
+					<button class="button order">Оформить заказ</button>
+					<button class="button cancel" data-toggle="close-modal">Отмена</button>
+				</div>
+			</div>
+			<!-- /.modal__footer -->
+		</div>
+		<!-- /.modal__content -->
+	</div>
+	<!-- /.modal -->
 	<script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/libs/slick/slick/slick.min.js"></script>
 	<script src="js/index.js"></script>
