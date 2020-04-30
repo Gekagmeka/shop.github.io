@@ -34,7 +34,7 @@ body{
 	justify-content:space-between;
 	align-items:center;
 }
-.header__logo{
+.header__logo img{
 	display:block;
 	width:101px;
 }
@@ -228,8 +228,9 @@ section{
 	display:flex;
 	align-items:center;
 }
-.footer__logo{
+.footer__logo img{
 	display:block;
+	width:101px;
 }
 .footer__menu{
 	margin-left:35px;
@@ -500,7 +501,7 @@ p.card__title{
 	}
 	/*footer*/
 	.footer{
-		padding:40px 0;
+		padding:40px 10px;
 	}
 	h3.card__title,
 	p.card__title{
@@ -605,16 +606,22 @@ p.card__title{
 	}
 	/*footer*/
 	.footer__content{
-		display:block;
+		flex-wrap:wrap;
 	}
 	.footer__menu{
 		margin:20px 0;
+		order:2;
+		width:100%;
 	}
 	.footer__link{
 		font-size:16px;
 	}
 	.footer__item{
 		margin-right:10px;
+	}
+	.footer__social{
+		order:3;
+		width:100%;
 	}
 	/*restaurants page*/
 	.restaurants__rate{

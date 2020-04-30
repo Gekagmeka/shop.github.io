@@ -7,4 +7,13 @@ $('[data-toggle="close-modal"]').on('click', function(){
 	$('body').removeClass('lock');
 });
 
-new WOW().init();
+var wow = new WOW(
+  {
+    boxClass:'wow',
+    animateClass:'animated',
+    offset:0,
+    mobile:false,
+    live:true,
+  }
+);
+wow.init();
