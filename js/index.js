@@ -6,3 +6,5 @@ $('[data-toggle="close-modal"]').on('click', function(){
 	$('.modal').removeClass('is-open');
 	$('body').removeClass('lock');
 });
+
+new WOW().init();
