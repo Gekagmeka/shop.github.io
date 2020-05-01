@@ -14,7 +14,9 @@ h1, h2, h3, h4, h5, h6, p, a, button, input, div{
 body{
 	background-color:#fffffe;
 }
-
+.wow{
+	visibility:hidden;
+}
 .lock{
 	overflow:hidden;
 }
