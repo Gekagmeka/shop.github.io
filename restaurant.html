@@ -14,7 +14,7 @@
 				<a class="header__logo" href="index.html"><img src="images/logo-01.png" alt="Delivery food" /></a>
 				<input class="header__input" type="text" name="address" placeholder="Адрес доставки">
 				<div class="header__buttons">
-					<button class="button enter"><img src="images/ico-01.png" alt="user" /> Войти</button>
+					<button class="button enter" data-fill="open-form"><img src="images/ico-01.png" alt="user" /> Войти</button>
 					<button class="button bag" data-toggle="open-modal"><img src="images/ico-02.png" alt="bag" /> Корзина</button>
 				</div>
 			</div>
@@ -266,7 +266,7 @@
 		</div>
 	</footer>
 	<!-- /.footer -->
-	<div class="modal">
+	<div class="modal wow fadeIn" data-wow-duration="0.5s">
 		<div class="modal__content">
 			<div class="modal__header">
 				<h1 class="modal__title">
@@ -351,12 +351,12 @@
 			</div>
 			<!-- /.modal__main -->
 			<div class="modal__footer">
-				<div class="modal__price wow fadeInUp" data-wow-delay="0.1s">
+				<div class="modal__price">
 					1250 &#8381;
 				</div>
 				<div class="modal__button">
-					<button class="button order wow fadeInUp" data-wow-delay="0.2s">Оформить заказ</button>
-					<button class="button cancel wow fadeInUp" data-wow-delay="0.3s" data-toggle="close-modal">Отмена</button>
+					<button class="button order">Оформить заказ</button>
+					<button class="button cancel" data-toggle="close-modal">Отмена</button>
 				</div>
 			</div>
 			<!-- /.modal__footer -->
@@ -364,6 +364,31 @@
 		<!-- /.modal__content -->
 	</div>
 	<!-- /.modal -->
+	<form class="form wow fadeIn" data-wow-duration="0.5s" action="sign-in">
+		<div class="form__content">
+			<button class="form__close" data-fill="close-form">
+				&times;
+			</button>
+			<h4 class="form__header">
+				Fill the fields below to&nbsp;enter the&nbsp;site
+			</h4>
+			<div class="form__group">
+				<label>Your e-mail</label>
+				<input class="form__input" type="email" name="usermail" required>
+			</div>
+			<!-- /.form__froup -->
+			<div class="form__group">
+				<label>Your password</label>
+				<input class="form__input" type="password" name="userpassword" required>
+			</div>
+			<!-- /.form__group -->
+			<button class="form__button button" type="submit">
+				<span class="button__text">Enter</span>
+			</button>
+		</div>
+		<!-- /.form__content -->
+	</form>
+	<!-- /.form -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="js/wow.min.js"></script>
 	<script src="js/index.js"></script>

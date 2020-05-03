@@ -7,6 +7,15 @@ $('[data-toggle="close-modal"]').on('click', function(){
 	$('body').removeClass('lock');
 });
 
+$('[data-fill="open-form"]').on('click', function(){
+	$('.form').addClass('is-open');
+	$('body').addClass('lock');
+});
+$('[data-fill="close-form"]').on('click', function(){
+	$('.form').removeClass('is-open');
+	$('body').removeClass('lock');
+});
+
 var wow = new WOW(
 	{
 		boxClass:'wow',
