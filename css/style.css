@@ -169,6 +169,7 @@ section{
 	border-radius:7px;
 	overflow:hidden;
 	text-decoration:none;
+	color:#302c34;
 }
 .card__image{
 	display:block;
