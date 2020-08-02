@@ -61,30 +61,18 @@ body{
 	border-radius:3px;
 	transition:all 0.2s ease-in;
 }
-.button:hover,
-.card__button:hover{
-	cursor:pointer;
-}
+
 .enter,
 .order{
 	background-color:#1890ff;
 	border:2px solid #1890ff;
 	color:#fffffe;
 }
-.enter:hover,
-.order:hover{
-	background-color:#0376df;
-	border:2px solid #0376df;
-}
 .bag,
 .cancel{
 	background-color:#fffffe;
 	color:#595959;
 	border:2px solid #ccc;
-}
-.bag:hover,
-.cancel:hover{
-	background-color:#eee;
 }
 .button img{
 	display:block;
@@ -250,9 +238,6 @@ section{
 	line-height:24px;
 	color:#595959;
 }
-.footer__link:hover{
-	text-decoration:underline;
-}
 .footer__social{
 	margin-left:auto;
 	display:flex;
@@ -267,9 +252,6 @@ section{
 }
 .footer__social a:last-child{
 	margin-right:0;
-}
-.footer__social a:hover{
-	opacity:0.8;
 }
 
 /*Restaurants page*/
@@ -501,6 +483,27 @@ p.card__title{
 }
 
 
+@media screen and (min-width:1024px) {
+	.button:hover,
+	.card__button:hover{
+		cursor:pointer;
+	}
+	.enter:hover,
+	.order:hover{
+		background-color:#0376df;
+		border:2px solid #0376df;
+	}
+	.bag:hover,
+	.cancel:hover{
+		background-color:#eee;
+	}
+	.footer__link:hover{
+		text-decoration:underline;
+	}
+	.footer__social a:hover{
+		opacity:0.8;
+	}
+}
 @media screen and (max-width:1023px) {
 	.intro .container{
 		padding:40px 50px;
